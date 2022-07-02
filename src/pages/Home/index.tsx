@@ -1,10 +1,15 @@
 import React from 'react';
 
+import NavBar from '../../components/NavBar';
+
 import { Container } from './styles';
 
 const Home: React.FC = () => {
     return (
-        <Container></Container>
+        <Container>
+            <NavBar />
+            <h1>Content</h1>
+        </Container>
     );
 }
 

@@ -9,3 +9,28 @@ html, body, .app {
     width: 100vw;
     height: 100vh;
 }
+
+mark {
+    color: var(--accent);
+    background: transparent;
+}
+
+:root {
+    --green: #03cc90;
+    --red: #CC0303;
+    --orange: #FBA704;
+    --blue: #03BBE4;
+    --purple: #8C03CC;
+    --pink: #DE0594;
+
+    --accent: var(--green);
+    --background: #353849;
+    --background2: #232734;
+    --background3: #3f4354;
+    --background4: #555a76;
+    --text: #ffffff;
+    --text2: #D3D3D3;
+
+    --default-font-family: 'Inter', Helvetica;
+    --logo-font-family: 'Roboto Slab', Helvetica;
+}
