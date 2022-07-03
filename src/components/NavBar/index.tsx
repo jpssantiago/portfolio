@@ -9,7 +9,7 @@ interface ILink {
 
 const links: ILink[] = [
   {
-    id: 'home',
+    id: 'intro',
     text: 'início'
   }, {
     id: 'about',
