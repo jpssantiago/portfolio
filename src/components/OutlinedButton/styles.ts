@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 
+interface Props {
+    width?: number;
+}
+
 export const Container = styled.div`
     height: 55px;
+    width: ${(props: Props) => props.width}px;
 
     padding: 0 20px;
 
@@ -27,4 +32,6 @@ export const Text = styled.p`
     font-size: 16px;
     font-family: var(--default-font-family);
     font-weight: 600;
+
+    text-align: center;
 `;
