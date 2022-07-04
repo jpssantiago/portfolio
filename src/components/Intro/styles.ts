@@ -3,12 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
     padding: 60px 350px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
     background: var(--background);
 
     @media (max-width: 1600px) {
@@ -22,6 +16,13 @@ export const Container = styled.div`
     @media (max-width: 1200px) {
         padding: 60px 20px;
     }
+
+    @media (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const Text = styled.p`
@@ -29,10 +30,15 @@ export const Text = styled.p`
     font-family: var(--default-font-family);
     font-weight: 800;
 
+    /* width: 80%; */
+
     color: var(--text);
 
     @media (max-width: 900px) {
         font-size: 30px;
+
+        width: 100%;
+        text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -45,13 +51,43 @@ export const SecondaryText = styled.p`
     font-family: var(--default-font-family);
     font-weight: 800;
 
+    /* width: 80%; */
+
     color: var(--text);
 
     @media (max-width: 900px) {
         font-size: 20px;
+
+        width: 100%;
+        text-align: center;
+    }
+`;
+
+export const Image = styled.img`
+    margin-left: 40px;
+    height: 400px;
+
+    @media (max-width: 1000px) {
+        display: none;
     }
 `;
 
 export const Row = styled.div`
     display: flex;
+
+    &.first-row {
+        height: 100%;
+
+        justify-content: center;
+        align-items: center;
+    }
+`;
+
+export const Column = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 900px) {
+        align-items: center;
+    }
 `;
