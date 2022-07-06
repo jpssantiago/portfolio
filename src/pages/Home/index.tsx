@@ -1,8 +1,8 @@
 import React from 'react';
 
 import NavBar from '../../components/NavBar';
-import Intro from '../../components/Intro';
-import About from '../../components/About';
+import Intro from '../../sections/Intro';
+import About from '../../sections/About';
 
 import { Container } from './styles';
 

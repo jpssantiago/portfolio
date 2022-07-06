@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Spacer from '../Spacer';
-import OutlinedButton from '../OutlinedButton';
-import Skill, { ISkill } from '../Skill';
+import Spacer from '../../components/Spacer';
+import OutlinedButton from '../../components/OutlinedButton';
+import Skill, { ISkill } from '../../components/Skill';
 
 import {
     Container,
@@ -48,7 +48,7 @@ const skills: ISkill[] = [
 
 const About: React.FC = () => {
     return (
-        <Container>
+        <Container id="about">
             <Column>
                 <Title>Lorem ipsum dolor sit amet</Title>
                 <Spacer vertical={20} />

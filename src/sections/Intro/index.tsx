@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Spacer from '../Spacer';
-import FilledButton from '../FilledButton';
-import OutlinedButton from '../OutlinedButton';
+import Spacer from '../../components/Spacer';
+import FilledButton from '../../components/FilledButton';
+import OutlinedButton from '../../components/OutlinedButton';
 
 import SVG from '../../assets/svg/programming.svg';
 
