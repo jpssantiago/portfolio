@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
     position: sticky;
     width: 100%;
+    top: 0;
+    left: 0;
 
     display: flex;
     justify-content: space-between;
