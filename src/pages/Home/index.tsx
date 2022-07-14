@@ -5,6 +5,7 @@ import NavBar from '../../components/NavBar';
 import Intro from '../../sections/Intro';
 import About from '../../sections/About';
 import Experience from '../../sections/Experience';
+import Projects from '../../sections/Projects';
 
 import { Container } from './styles';
 
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
             <Intro />
             <About />
             <Experience />
+            <Projects />
         </Container>
     );
 }

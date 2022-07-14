@@ -12,6 +12,7 @@ export const Image = styled.img`
 
     filter: grayscale(100%);
     transition: all .2s linear;
+    z-index: 10;
 
     fit: cover;
 
