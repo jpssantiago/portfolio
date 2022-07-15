@@ -67,6 +67,6 @@ export const Title = styled.h1`
 export const Text = styled.p`
     color: var(--text2);
 
-    font-size: 14px;
+    font-size: 16px;
     font-family: var(--default-font-family);
 `;
