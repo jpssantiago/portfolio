@@ -10,7 +10,7 @@ export default {
     },
     extend: {
       colors: {
-        background: '#171C28',
+        background: '#171C28', // maybe #000000
         text: '#FFFFFF',
         card: '#292C33',
         gray: '#BFBFBF',

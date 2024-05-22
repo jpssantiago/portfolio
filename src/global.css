@@ -21,7 +21,7 @@
     }
 }
 
-.gradient-text {
+.gradient-text, .gradient-when-hover:hover {
     background: linear-gradient(-45deg, #6BC5F8, #CF59E6, #6BC5F8, #CF59E6);
     background-clip: text;
     -webkit-background-clip: text;
