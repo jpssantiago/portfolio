@@ -6,7 +6,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      "inter": ["Inter", "sans-serif"]
+      "inter": ["Inter", "sans-serif"],
+      "mono": ["ui-monospace", "SFMono-Regular"]
     },
     extend: {
       colors: {

@@ -5,7 +5,7 @@ const technologies = ["React", "TailwindCSS", "Next.js", "ReactNative", "Flutter
 export default function AboutSection() {
     function TechnologyItem({ tech }: any) {
         return (
-            <p className="text-text mr-[20px] font-medium transition-all">{tech}</p>
+            <p className="text-text mr-[20px] font-mono font-medium transition-all">{tech}</p>
         )
     }
 

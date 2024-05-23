@@ -83,3 +83,19 @@
 .underline-link:hover::after {
     width: 100%;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #171C28;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #BFBFBF;
+    border-radius: 50px;
+}
