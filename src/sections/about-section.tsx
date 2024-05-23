@@ -1,6 +1,6 @@
 import Section from "../components/section"
 
-const technologies = ['React', 'TailwindCSS', 'Next.js', 'ReactNative', 'Flutter', 'Node.js']
+const technologies = ["React", "TailwindCSS", "Next.js", "ReactNative", "Flutter", "Node.js"]
 
 export default function AboutSection() {
     function TechnologyItem({ tech }: any) {
