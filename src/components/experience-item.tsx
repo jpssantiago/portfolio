@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react"
 
 import Experience from "../models/experience"
+import GradientCard from "./gradient-card"
 
 interface Props {
     experience: Experience
@@ -16,14 +17,14 @@ export default function ExperienceItem({ experience, alignment = "start", lastCh
     }
 
     useEffect(() => {
-        window.addEventListener("resize", windowResized);
-        return () => window.removeEventListener("resize", windowResized);
+        window.addEventListener("resize", windowResized)
+        return () => window.removeEventListener("resize", windowResized)
     }, [windowResized])
 
     function ExperienceCard() {
         return (
-            <div className={`w-[380px] h-[165px] gradient-card bg-background p-1 ${alignment == "start" ? "order-1" : "order-3"} tablet:order-1 phone:order-1 phone:w-full`}>
-                <div className="w-full h-full flex flex-col justify-between bg-card p-[20px] rounded-sm">
+            <GradientCard style={`w-[380px] h-[165px] ${alignment == "start" ? "order-1" : "order-3"} tablet:order-1 phone:order-1 phone:w-full`}>
+                <div className="h-full flex flex-col justify-between">
                     <div>
                         <h1 className="text-text">{experience.title}</h1>
                         <h2 className="text-gray mt-[10px]">{experience.description}</h2>
@@ -31,7 +32,7 @@ export default function ExperienceItem({ experience, alignment = "start", lastCh
 
                     <p className="text-gray text-sm">{experience.getFormattedDate()} → {experience.getElapsedTime()}</p>
                 </div>
-            </div>
+            </GradientCard>
         )
     }
 
@@ -47,6 +48,8 @@ export default function ExperienceItem({ experience, alignment = "start", lastCh
                     order-2
                     ${alignment == "start" ? "tablet:rotate-90 " : "tablet:-rotate-90 "}
                     ${alignment == "start" ? "phone:rotate-90" : "phone:-rotate-90"}
+                    tablet:my-[20px]
+                    phone:my-[20px]
                 `}>{alignment == "start" ? "👉" : "👈"}</p>
         )
     }

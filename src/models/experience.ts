@@ -51,9 +51,9 @@ export default class Experience {
         const months = Math.floor(totalDays % 360 / 30)
 
         if (months) {
-            return years + ' years and ' + months + '+ months'
+            return years + " years and " + months + "+ months"
         }
 
-        return years + '+ years'
+        return years + "+ years"
     }
 }

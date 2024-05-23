@@ -1,3 +1,5 @@
+import { links } from "../_data/links-data"
+
 export default function WelcomeSection() {
     return (
         <div className="h-screen max-w-[1440px] mx-auto py-[120px] px-[220px] large:px-[100px] tablet:px-[50px] phone:px-[50px] flex flex-col justify-center">
@@ -13,7 +15,7 @@ export default function WelcomeSection() {
                 className="text-text text-xl font-thin tablet:text-lg phone:text-sm text-start"
             >
                 Get in touch 👉
-                <a href="mailto:joao@joaosantiago.com.br" className="animated-link">joao@joaosantiago.com.br</a>
+                <a href={links.email} className="animated-link">joao@joaosantiago.com.br</a>
             </p>
         </div>
     )
