@@ -20,7 +20,14 @@ const experiences: Experience[] = [
         "4 years",
         "🎓"
     ), new Experience(
-        "Front-End Developer | WEB & Mobile",
+        "Junior iOS Developer",
+        "FIT Segurança",
+        new Date(2020, 0),
+        new Date(2021, 8),
+        "1 year and 8 months",
+        "🎒"
+    ), new Experience(
+        "Front-End Developer",
         "izi.fit",
         new Date(2021, 9),
         new Date(2022, 2),
@@ -28,7 +35,7 @@ const experiences: Experience[] = [
         "💼"
     ), new Experience(
         "Front-End Software Engineer",
-        "FIT Segurança",
+        "Fauri Risk Solutions",
         new Date(2022, 2),
         undefined,
         undefined,
