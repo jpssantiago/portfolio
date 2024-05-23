@@ -47,8 +47,8 @@ export default function ExperienceItem({ experience, alignment = "start", lastCh
                 className={`
                     text-3xl
                     order-2
-                    tablet:${alignment == "start" ? "rotate-90 " : "-rotate-90 "}
-                    phone:${alignment == "start" ? "rotate-90" : "-rotate-90"}
+                    ${alignment == "start" ? "tablet:rotate-90 " : "tablet:-rotate-90 "}
+                    ${alignment == "start" ? "phone:rotate-90" : "phone:-rotate-90"}
                 `}>{alignment == "start" ? "👉" : "👈"}</p>
         )
     }
@@ -83,7 +83,7 @@ export default function ExperienceItem({ experience, alignment = "start", lastCh
                 justify-between
                 items-center
                 w-[calc(50%+24px)]
-                self-${alignment}
+                ${alignment == "start" ? "self-start" : "self-end"}
                 tablet:flex-col
                 tablet:self-center
                 phone:flex-col
