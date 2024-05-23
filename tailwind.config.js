@@ -20,8 +20,8 @@ export default {
       }
     },
     screens: {
-      phone: { max: "560px" },
-      tablet: { min: "560px", max: "1100px" },
+      phone: { max: "700px" }, // 560px
+      tablet: { min: "700px", max: "1100px" }, // min = 560px
       large: { min: "1100px", max: "1350px" }
     }
   },

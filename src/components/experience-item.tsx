@@ -11,8 +11,6 @@ interface Props {
 export default function ExperienceItem({ experience, alignment = "start", lastChild = false }: Props) {
     const [hideLastIndicator, setHideLastIndicator] = useState<boolean>(window.screen.width <= 1100 && lastChild)
 
-    console.log(alignment)
-
     function windowResized() {
         setHideLastIndicator(window.screen.width <= 1100 && (lastChild))
     }

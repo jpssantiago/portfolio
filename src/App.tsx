@@ -1,6 +1,7 @@
 import WelcomeSection from "./sections/welcome-section"
 import AboutSection from "./sections/about-section"
 import ExperienceSection from "./sections/experience-section"
+import ProjectsSection from "./sections/projects-section"
 
 import "./global.css"
 
@@ -10,6 +11,7 @@ function App() {
       <WelcomeSection />
       <AboutSection />
       <ExperienceSection />
+      <ProjectsSection />
     </div>
   )
 }
