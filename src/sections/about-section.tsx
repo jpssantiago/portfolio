@@ -12,25 +12,33 @@ export default function AboutSection() {
     return (
         <Section name="About me">
             <p
-                className="text-text font-light"
+                className="text-text"
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Pellentesque ultrices volutpat orci ut mollis. Praesent nibh 
-                lorem, varius ac egestas convallis, mattis non nulla. 
-                Class aptent taciti sociosqu ad litora torquent per conubia 
-                nostra, per inceptos himenaeos. Duis ullamcorper pulvinar 
-                pretium.
+                I'm a front-end software engineer with 4.5 years of professional
+                experience, but I started coding before high school.
                 
                 <br/><br/>
-                Vestibulum ultricies gravida lectus. Non sollicitudin velit 
-                semper eu. In sit amet feugiat leo, et lacinia dui. Etiam dictum
-                diam ut nisi rhoncus dapibus. 
-                Vestibulum ante ipsum primis in faucibus orci luctus et 
-                ultrices.
+                I started programming when I was just 13. I learned how to code
+                in Java and then created my own Minecraft server, which was very
+                successful and quickly grew to a network of 4 different servers.
                 
                 <br/><br/>
-                Here are the technologies I work the best:</p>
+                In High School, I became more interested in mobile development 
+                using Java and Kotlin. I developed an Android app to show 
+                real-time information about what was happening on my servers. 
+                The players could access the server chat, manage their friend 
+                groups, and check the live prices of all the stores on the 4 
+                different servers - just like a "mini stock market"
+                
+                <br/><br/>
+                Fast-forward to today, I've had the privilege of working at 
+                three different companies. My main focus these days is 
+                building intuitive products and digital experiences at Fauri 
+                Risk Solutions for a variety of clients.
 
+                <br/><br/>
+                Here are a few technologies I've worked recently with:
+            </p>
                 <div className="flex flex-wrap mt-[20px]">
                     {technologies.map((tech, index) => (
                         <TechnologyItem key={index} tech={tech}></TechnologyItem>
