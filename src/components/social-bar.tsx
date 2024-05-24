@@ -4,8 +4,8 @@ export default function SocialBar() {
     return (
         <div className="fixed bottom-0 left-[50px] flex flex-col items-center large:left-[25px] tablet:relative tablet:left-0 tablet:mt-[50px] phone:relative phone:left-0 phone:mt-[50px]">
             <div className="hidden tablet:block phone:block">
-                <p className="text-center text-2xl gradient-text">Want to get in touch with me?</p>
-                <p className="text-center text-text text-xl mt-[10px]">These are my socials ⬇️</p>
+                <p className="text-center text-2xl gradient-text">Let's get in touch</p>
+                <p className="text-center text-text text-xl mt-[10px]">Ways to connect with me ⬇️</p>
             </div>
 
             <div className="flex flex-col items-center tablet:flex-row tablet:mt-[20px] tablet:gap-[30px] phone:flex-row phone:mt-[20px] phone:gap-[30px]">
