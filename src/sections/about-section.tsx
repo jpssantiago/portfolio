@@ -14,7 +14,7 @@ export default function AboutSection() {
             <p
                 className="font-light text-text"
             >
-                I'm a front-end software engineer with 4.5 years of professional
+                I'm a full-stack software engineer with 4.5 years of professional
                 experience, but I started coding before high school.
                 
                 <br/><br/>
