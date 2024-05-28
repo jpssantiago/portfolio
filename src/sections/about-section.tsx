@@ -12,7 +12,7 @@ export default function AboutSection() {
     return (
         <Section name="About me">
             <p
-                className="text-text"
+                className="font-light text-text"
             >
                 I'm a front-end software engineer with 4.5 years of professional
                 experience, but I started coding before high school.
