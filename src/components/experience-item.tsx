@@ -23,14 +23,14 @@ export default function ExperienceItem({ experience, alignment = "start", lastCh
 
     function ExperienceCard() {
         return (
-            <GradientCard style={`w-[380px] h-[165px] ${alignment == "start" ? "order-1" : "order-3"} tablet:order-1 phone:order-1 phone:w-full`}>
-                <div className="h-full flex flex-col justify-between">
+            <GradientCard style={`w-[380px] h-[165px] ${alignment == "start" ? "order-1" : "order-3"} tablet:order-1 tablet:w-full phone:order-1 phone:w-full`}>
+                <div className="flex flex-col justify-between h-full">
                     <div>
                         <h1 className="text-text">{experience.title}</h1>
                         <h2 className="text-gray mt-[10px]">{experience.description}</h2>
                     </div>
 
-                    <p className="text-gray text-sm">{experience.getFormattedDate()} → {experience.getElapsedTime()}</p>
+                    <p className="text-sm text-gray">{experience.getFormattedDate()} → {experience.getElapsedTime()}</p>
                 </div>
             </GradientCard>
         )

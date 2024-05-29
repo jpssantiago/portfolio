@@ -38,7 +38,7 @@ export default function ProjectsSection() {
             </div>
 
             <div className="flex flex-col items-center">
-                <h1 className="gradient-text text-2xl text-center">My other projects</h1>
+                <h1 className="text-2xl text-center gradient-text">My other projects</h1>
 
                 <a href={links.github} className="mt-[10px] text-text text-xl text-center underline-link">visit my github for more 🤘</a>
 

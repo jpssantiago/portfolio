@@ -9,7 +9,7 @@ import "./global.css"
 
 function App() {
   return (
-    <div className="h-full bg-background font-inter relative">
+    <div className="relative h-full bg-background font-inter">
       <WelcomeSection />
       <AboutSection />
       <ExperienceSection />

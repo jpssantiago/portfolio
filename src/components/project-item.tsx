@@ -11,23 +11,25 @@ interface Props {
 
 export default function ProjectItem({ project, alignment }: Props) {
     function getBestLink(): string {
+        let bestLink = ""
+
         for (let link of project.links) {
             if (link.iconName == "fa-up-right-from-square")  { // this is the #1 link.
                 return link.url
             }
 
             if (link.iconName == "fa-github") { // this is the #2 link.
-                return link.url
+                bestLink = link.url
             }
         }
 
-        return ""
+        return bestLink
     }
 
     return (
         <div className="flex flex-row justify-between mb-[50px] tablet:flex-col tablet:w-full phone:flex-col phone:w-full">
             <div className={`flex flex-col justify-center w-[calc(50%-10px)] ${alignment == "start" ? "order-1" : "order-2 items-end text-end"} tablet:w-full tablet:order-1 phone:w-full phone:order-1 phone:items-start phone:text-start`}>
-                <h1 className="text-text text-2xl">{project.name}</h1>
+                <h1 className="text-2xl text-text">{project.name}</h1>
 
                 <GradientCard style="w-[450px] mt-[20px] tablet:w-full phone:w-full">
                     <p className="text-gray line-clamp-3">{project.description}</p>

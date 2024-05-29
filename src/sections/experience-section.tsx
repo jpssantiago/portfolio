@@ -54,7 +54,7 @@ export default function ExperienceSection() {
 
     return (
         <Section name="My work experience and education">
-            <div className="flex flex-col relative w-full">
+            <div className="relative flex flex-col w-full">
                 {experiences.map((experience, index) => (
                     <ExperienceItem
                         key={index}
