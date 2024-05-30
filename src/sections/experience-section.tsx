@@ -34,7 +34,7 @@ const experiences: Experience[] = [
         "6 months",
         "💼"
     ), new Experience(
-        "Front-End Software Engineer",
+        "Full-Stack Software Engineer",
         "Fauri Risk Solutions",
         new Date(2022, 2),
         undefined,
