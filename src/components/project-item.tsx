@@ -44,7 +44,7 @@ export default function ProjectItem({ project, alignment }: Props) {
                 </div>
             </div>
 
-            <div className={`w-[calc(50%-10px)] max-h-[300px] ${alignment == "start" ? "order-2" : "order-1"} tablet:order-2 tablet:mt-[20px] tablet:w-full phone:order-2 phone:mt-[20px] phone:w-full phone:h-[350px]`}>
+            <div className={`w-[calc(50%-10px)] max-h-[300px] h-full ${alignment == "start" ? "order-2" : "order-1"} tablet:order-2 tablet:mt-[20px] tablet:w-full phone:order-2 phone:mt-[20px] phone:w-full phone:h-[350px]`}>
                 <a href={getBestLink()}>
                     <img className="w-full h-full rounded-sm" src={project.coverImage} />
                 </a>
