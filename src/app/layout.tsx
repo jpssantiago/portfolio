@@ -4,6 +4,7 @@ import { twMerge } from "tailwind-merge"
 import { NavBar } from "@/components/nav-bar"
 
 import "./globals.css"
+import { SocialsLine } from "@/components/socials-line"
 
 const sora = Sora({ subsets: ["latin"] })
 
@@ -22,6 +23,8 @@ export default function RootLayout({
       <body className={twMerge(sora.className, "bg-background text-white min-h-screen")}>
         <NavBar />
         {children}
+        
+        <SocialsLine />
       </body>
     </html>
   )

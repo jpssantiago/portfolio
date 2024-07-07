@@ -88,8 +88,24 @@
   }
 }
 
+@keyframes fade-up-animation {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 .fade-down {
   animation: 1.5s fade-down-animation;
+}
+
+.fade-up {
+  animation: 1.5s fade-up-animation;
 }
 
 .hero-text-bg {
