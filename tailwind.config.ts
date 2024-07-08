@@ -75,7 +75,10 @@ const config = {
     },
     screens: {
       small: { max: "550px" },
-      medium: { min: "550px", max: "850px" }
+      medium: { min: "550px", max: "850px" },
+
+      "2cols": { max: "1180px" },
+      "1col": { max: "680px" }
     }
   },
   plugins: [require("tailwindcss-animate")],

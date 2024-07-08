@@ -6,7 +6,7 @@ type TabViewProps = {
 
 export function TabView({ children }: TabViewProps) {
     return (
-        <div className="flex gap-10 w-full">
+        <div className="flex medium:flex-col small:flex-col gap-10 w-full">
             {children}
         </div>
     )

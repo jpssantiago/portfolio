@@ -6,7 +6,7 @@ import { LINKED_IN, MAIL, GITHUB } from "@/data/links"
 
 export function SocialsLine() {
     return (
-        <div className="bottom-0 left-16 fixed flex flex-col items-center gap-5">
+        <div className="bottom-0 left-16 medium:left-8 fixed flex flex-col items-center gap-5 small:hidden">
             <Link href={LINKED_IN}>
                 <SiLinkedin
                     size={20}

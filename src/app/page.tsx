@@ -4,10 +4,10 @@ import { ProjectsSection } from "@/components/sections/projects-section"
 
 export default function AppPage() {
   return (
-    <main className="flex flex-col mb-10">
+    <main className="flex flex-col mx-auto mb-10 w-full max-w-[1488px]">
       <HeroSection />
 
-      <div className="flex flex-col gap-60">
+      <div className="flex flex-col gap-60 w-full">
         <AboutSection />
         <ProjectsSection />
       </div>

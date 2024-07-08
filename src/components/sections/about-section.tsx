@@ -20,9 +20,9 @@ export function AboutSection() {
     const [currentTab, setCurrentTab] = useState<string>(tabs[0])
     
     return (
-        <Section>
+        <Section className="medium:items-center small:items-center">
             <SectionHeader>
-                <SectionTitle index={1}>
+                <SectionTitle>
                     About me & Experience
                 </SectionTitle>
             </SectionHeader>

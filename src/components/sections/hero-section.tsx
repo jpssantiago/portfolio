@@ -11,7 +11,7 @@ export function HeroSection() {
                 Hello 👋, I&apos;m João Santiago.
             </p>
 
-            <h1 className="w-[800px] medium:w-[500px] small:max-w-[320px] font-bold text-6xl small:text-2xl medium:text-4xl leading-tight">
+            <h1 className="w-[800px] medium:w-[480px] small:max-w-[320px] font-bold text-6xl small:text-2xl medium:text-4xl leading-tight">
                 Turning ideas
                 
                 into real life <HeroText>products</HeroText> is my calling.

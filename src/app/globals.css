@@ -76,6 +76,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes fade-down-animation {
   0% {
     transform: translateY(-20%);
@@ -109,7 +113,7 @@
 }
 
 .hero-text-bg {
-  animation: hero-text-animation 4s .8s forwards;
+  animation: hero-text-animation 4s .5s forwards;
 }
 
 @keyframes hero-text-animation {
