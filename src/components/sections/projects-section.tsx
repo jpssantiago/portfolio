@@ -7,7 +7,9 @@ import { SectionContent } from "@/components/section/section-content"
 import { ProjectItem } from "@/components/project-item"
 
 export async function ProjectsSection() {
-    const response = await fetch("https://bucket.joaosantiago.com.br/portfolio-projects.json")
+    const response = await fetch("https://api-portfolio.joaosantiago.com.br/projects", {
+        cache: "no-cache"
+    })
     const data = await response.json()
 
     const projects: Project[] = data.projects ?? []
@@ -24,7 +26,7 @@ export async function ProjectsSection() {
                 </UnderlineLink>
             </SectionHeader>
 
-            <SectionContent className="gap-4 grid grid-cols-3 1col:grid-cols-1 2cols:grid-cols-2 2cols:mx-auto">
+            <SectionContent className="gap-2 grid grid-cols-3 1col:grid-cols-1 2cols:grid-cols-2 2cols:mx-auto">
                 {projects.map((project, index) => (
                     <ProjectItem
                         key={index}

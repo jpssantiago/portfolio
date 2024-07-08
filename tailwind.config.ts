@@ -78,7 +78,7 @@ const config = {
       medium: { min: "550px", max: "850px" },
 
       "2cols": { max: "1180px" },
-      "1col": { max: "680px" }
+      "1col": { max: "750px" }
     }
   },
   plugins: [require("tailwindcss-animate")],
