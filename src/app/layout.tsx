@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
 import { Sora } from "next/font/google"
 import { twMerge } from "tailwind-merge"
+
 import { NavBar } from "@/components/nav-bar"
+import { SocialsLine } from "@/components/socials-line"
 
 import "./globals.css"
-import { SocialsLine } from "@/components/socials-line"
 
 const sora = Sora({ subsets: ["latin"] })
 

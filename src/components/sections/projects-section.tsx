@@ -5,9 +5,10 @@ import { SectionTitle } from "@/components/section/section-title"
 import { UnderlineLink } from "@/components/underline-link"
 import { SectionContent } from "@/components/section/section-content"
 import { ProjectItem } from "@/components/project-item"
+import { ProjectItemSkeleton } from "@/components/project-item-skeleton"
 
 export async function ProjectsSection() {
-    const response = await fetch("https://api-portfolio.joaosantiago.com.br/projects", {
+    const response = await fetch("https://api-portfolio.joaosantiago.com.br/projects?featured=true", {
         cache: "no-cache"
     })
     const data = await response.json()
@@ -33,6 +34,14 @@ export async function ProjectsSection() {
                         project={project}
                     />
                 ))}
+
+                {projects.length == 0 && (
+                    <>
+                        {Array.from({ length: 6 }).map((_, index) => (
+                            <ProjectItemSkeleton key={index} />
+                        ))}
+                    </>
+                )}
             </SectionContent>
         </Section>
     )
