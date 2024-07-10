@@ -21,7 +21,7 @@ export function WorkTabView() {
     }
 
     return (
-        <div className="space-y-8">
+        <div className="gap-8 grid grid-cols-2 small:grid-cols-1">
             <AboutItem
                 title="Full-Stack Software Engineer"
                 description={`Fauri Risk Solutions · March 2022 - Present · ${getElapsedTime()}`}

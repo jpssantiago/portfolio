@@ -9,7 +9,8 @@ const frontEnd: Skill[] = [
         skill: "React",
         href: "https://react.dev"
     }, {
-        skill: "Vite"
+        skill: "Vite",
+        href: "https://vitejs.dev"
     }, {
         skill: "TailwindCSS",
         href: "https://tailwindcss.com"
@@ -21,31 +22,42 @@ const backEnd: Skill[] = [
         skill: "Node",
         href: "https://nodejs.org"
     }, {
-        skill: "Fastify"
+        skill: "Fastify",
+        href: "https://fastify.dev"
     }, {
-        skill: "Prisma"
+        skill: "Prisma",
+        href: "https://prisma.io"
     }, {
-        skill: "PostgreSQL"
+        skill: "PostgreSQL",
+        href: "https://postgresql.org"
     }, {
-        skill: "MySQL"
+        skill: "MySQL",
+        href: "https://mysql.com"
     }, {
-        skill: "MongoDB"
+        skill: "MongoDB",
+        href: "https://mongodb.com"
     }
 ]
 
 const deploy: Skill[] = [
     {
-        skill: "Docker"
+        skill: "Docker",
+        href: "https://docker.com"
     }, {
-        skill: "Vercel"
+        skill: "Vercel",
+        href: "https://vercel.com"
     }, {
-        skill: "AWS EC2"
+        skill: "AWS",
+        href: "https://aws.amazon.com"
     }, {
-        skill: "Cloudflare R2"
+        skill: "Cloudflare R2",
+        href: "https://www.cloudflare.com/lp/pg-r2-comparison/?utm_source=google&utm_medium=cpc&utm_campaign=ao-fy-pay-latam_por_bz-applications-ge-ge-general-exp_paid&utm_content=dsa&utm_term=DYNAMIC+SEARCH+ADS&campaignid=71700000099292654&adgroupid=58700008690133154&creativeid=694991758548&&_bt=694991758548&_bk=&_bm=&_bn=g&_bg=160513360059&_placement=&_target=&_loc=9199069&_dv=c&awsearchcpc=1&gad_source=1&gclid=CjwKCAjw4ri0BhAvEiwA8oo6F6aV2oiAaVggYeagKSKk9uiWNv3PwkK7Hu-AaT5X3ja8EphfAwmTFBoCqC4QAvD_BwE&gclsrc=aw.ds"
     }, {
-        skill: "Caddy"
+        skill: "Caddy",
+        href: "https://caddyserver.com"
     }, {
-        skill: "PM2"
+        skill: "PM2",
+        href: "https://pm2.keymetrics.io/"
     }
 ]
 

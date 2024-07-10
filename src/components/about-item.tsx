@@ -6,7 +6,7 @@ type AboutItemProps = {
 export function AboutItem({ title, description }: AboutItemProps) {
     return (
         <div className="flex items-start gap-2 cursor-default group">
-            <div className="group-hover:bg-primary border-primary mt-[6px] border rounded-full transition-all size-3" />
+            <div className="group-hover:bg-primary border-primary mt-[6px] border rounded-full min-w-3 min-h-3 transition-all size-3" />
 
             <div className="flex flex-col gap-1">
                 <h1 className="font-medium">
