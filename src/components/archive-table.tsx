@@ -1,6 +1,6 @@
 import { Project } from "@/models/project"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { ProjectLinks } from "./project-links"
+import { ProjectLinks } from "@/components/project-links"
 
 type ArchiveTableProps = {
     archive: Project[]
@@ -21,16 +21,20 @@ export function ArchiveTable({ archive }: ArchiveTableProps) {
             <TableBody>
                 {archive.map(project => (
                     <TableRow key={project.id} className="hover:bg-zinc-900">
-                        <TableCell>
+                        <TableCell className="font-medium">
                             {project.name}
                         </TableCell>
 
-                        <TableCell>
+                        <TableCell className="min-w-60 text-zinc-300">
                             {project.description}
                         </TableCell>
 
-                        <TableCell>
-                            {project.technologies.join(" · ")}
+                        <TableCell className="flex flex-wrap gap-2 min-w-60">
+                            {project.technologies.map((technology, index) => (
+                                <div key={index} className="bg-zinc-800 px-3 py-2 text-zinc-300">
+                                    {technology}
+                                </div>
+                            ))}
                         </TableCell>
 
                         <TableCell>
