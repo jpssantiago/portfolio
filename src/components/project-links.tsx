@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { ExternalLink, Github } from "lucide-react"
-import { SiAppstore, SiGoogleplay } from "@icons-pack/react-simple-icons"
+import { SiAppstore, SiGoogleplay, SiFigma } from "@icons-pack/react-simple-icons"
 
 import { Project } from "@/models/project"
 
@@ -38,6 +38,12 @@ export function ProjectLinks({ project }: ProjectLinksProps) {
                     {link.type == "GOOGLE_PLAY" && (
                         <SiGoogleplay
                             size={20}
+                        />
+                    )}
+
+                    {link.type == "FIGMA" && (
+                        <SiFigma 
+                            size={18}
                         />
                     )}
                 </Link>
