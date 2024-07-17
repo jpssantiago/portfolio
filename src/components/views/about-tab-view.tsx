@@ -36,7 +36,7 @@ export function AboutTabView() {
             <div className="flex flex-wrap justify-between gap-y-5">
                 <AboutItem 
                     title="Experience"
-                    description="4.5 years"
+                    description="5+ years"
                 />
 
                 <AboutItem 

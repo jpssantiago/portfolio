@@ -23,7 +23,7 @@ export function WorkTabView() {
     return (
         <div className="gap-8 grid grid-cols-2 small:grid-cols-1">
             <AboutItem
-                title="Full-Stack Software Engineer"
+                title="Senior Full-Stack Software Engineer"
                 description={`Fauri Risk Solutions · March 2022 - Present · ${getElapsedTime()}`}
             />
 
@@ -33,8 +33,8 @@ export function WorkTabView() {
             />
 
             <AboutItem
-                title="iOS Developer"
-                description="FIT Segurança · January 2020 - September 2021 · 1 year and 8 months"
+                title="Front-End Developer"
+                description="FIT Segurança · June 2019 - September 2021 · 2 years and 4 months"
             />
 
             <AboutItem
