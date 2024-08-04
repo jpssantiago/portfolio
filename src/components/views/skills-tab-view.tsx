@@ -9,11 +9,17 @@ const frontEnd: Skill[] = [
         skill: "React",
         href: "https://react.dev"
     }, {
-        skill: "Vite",
-        href: "https://vitejs.dev"
+        skill: "React Native",
+        href: "https://reactnative.dev/"
     }, {
         skill: "TailwindCSS",
         href: "https://tailwindcss.com"
+    }, {
+        skill: "Flutter",
+        href: "https://flutter.dev/"
+    }, {
+        skill: "Swift",
+        href: "https://developer.apple.com/swift/"
     }
 ]
 
