@@ -8,12 +8,18 @@ import { ProjectItem } from "@/components/project-item"
 import { ProjectItemSkeleton } from "@/components/project-item-skeleton"
 
 export async function ProjectsSection() {
-    const response = await fetch("https://api-portfolio.joaosantiago.com.br/projects?featured=true", {
-        cache: "no-cache"
-    })
-    const data = await response.json()
+    let projects: Project[] = []
 
-    const projects: Project[] = data.projects ?? []
+    try {
+        const response = await fetch("https://api-portfolio.joaosantiago.com.br/projects?featured=true", {
+            cache: "no-cache"
+        })
+
+        const data = await response.json()
+        if (data.projects) {
+            projects = data.projects
+        }
+    } catch { }
 
     return (
         <Section id="projects" className="py-10">
