@@ -33,7 +33,7 @@ export function WorkTabView() {
             />
 
             <AboutItem
-                title="Front-End Developer"
+                title="Full-Stack Developer"
                 description="FIT Segurança · June 2019 - September 2021 · 2 years and 4 months"
             />
 
