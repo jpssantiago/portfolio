@@ -1,16 +1,16 @@
-import { Project } from "@/models/project"
+import { TProject } from "@/models/project"
 import { ProjectLinks } from "@/components/project-links"
 
 type ProjectItemProps = {
-    project: Project
+    project: TProject
 }
 
 export function ProjectItem({ project }: ProjectItemProps) {
     return (
         <div className="relative bg-secondary min-w-72 max-w-96 h-72 transition-transform hover:-translate-y-1 duration-300 group">
-            {project.thumbnail ? (
+            {project.files[0] ? (
                 <img
-                    src={project.thumbnail}
+                    src={project.files[0]}
                     alt=""
                     className="object-fill size-full"
                 />
@@ -38,7 +38,7 @@ export function ProjectItem({ project }: ProjectItemProps) {
                 <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, index) => (
                         <div key={index} className="bg-[#3d4857] px-3 py-2">
-                            {tech}
+                            {tech.name}
                         </div>
                     ))}
                 </div>

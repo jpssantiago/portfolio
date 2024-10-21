@@ -1,13 +1,12 @@
-import { Link } from "./link"
+import { Link, Technology } from "@prisma/client"
 
-export type Project = {
+export type TProject = {
     id: string
     name: string
-    description?: string
-    technologies: string[]
-    thumbnail?: string
-    createdAt: Date
-    isFeatured: boolean
-    featuredOrder?: number
+    description: string | null
+    technologies: Technology[]
+    files: string[]
     links: Link[]
+    display: "FEATURED" | "ARCHIVE"
+    createdAt: Date
 }

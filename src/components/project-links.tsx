@@ -1,11 +1,10 @@
 import Link from "next/link"
 import { ExternalLink, Github } from "lucide-react"
 import { SiAppstore, SiGoogleplay, SiFigma } from "@icons-pack/react-simple-icons"
-
-import { Project } from "@/models/project"
+import { TProject } from "@/models/project"
 
 type ProjectLinksProps = {
-    project: Project
+    project: TProject
 }
 
 export function ProjectLinks({ project }: ProjectLinksProps) {

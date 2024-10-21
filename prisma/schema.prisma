@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id String @id @default(cuid())
+  name String
+  description String?
+  technologies Technology[]
+  files String[]
+  links Link[]
+  display ProjectDisplay
+  createdAt DateTime
+}
+
+model Technology {
+  id String @id @default(cuid())
+  name String
+  link String?
+
+  projects Project[]
+}
+
+enum ProjectDisplay {
+  FEATURED
+  ARCHIVE
+}
+
+model Link {
+  id String @id @default(cuid())
+  href String
+  type LinkType
+
+  project Project @relation(fields: [projectId], references: [id])
+  projectId String
+}
+
+enum LinkType {
+  LIVE
+  GITHUB
+  APP_STORE
+  GOOGLE_PLAY
+  FIGMA
+}

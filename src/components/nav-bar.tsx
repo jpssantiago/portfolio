@@ -1,7 +1,7 @@
 import Link from "next/link"
+import Image from "next/image"
 
 import { NavBarLink } from "@/components/nav-bar-link"
-import Image from "next/image"
 
 export function NavBar() {
     return (

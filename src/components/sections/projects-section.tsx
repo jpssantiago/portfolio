@@ -1,4 +1,3 @@
-import { Project } from "@/models/project"
 import { Section } from "@/components/section/section"
 import { SectionHeader } from "@/components/section/section-header"
 import { SectionTitle } from "@/components/section/section-title"
@@ -6,20 +5,10 @@ import { UnderlineLink } from "@/components/underline-link"
 import { SectionContent } from "@/components/section/section-content"
 import { ProjectItem } from "@/components/project-item"
 import { ProjectItemSkeleton } from "@/components/project-item-skeleton"
+import { getFeaturedProjects } from "@/actions/get-featured-projects"
 
 export async function ProjectsSection() {
-    let projects: Project[] = []
-
-    try {
-        const response = await fetch("https://api-portfolio.joaosantiago.com.br/projects?featured=true", {
-            cache: "no-cache"
-        })
-
-        const data = await response.json()
-        if (data.projects) {
-            projects = data.projects
-        }
-    } catch { }
+    const projects = await getFeaturedProjects()
 
     return (
         <Section id="projects" className="py-10">

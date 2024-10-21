@@ -1,9 +1,9 @@
-import { Project } from "@/models/project"
+import { TProject } from "@/models/project"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { ProjectLinks } from "@/components/project-links"
 
 type ArchiveTableProps = {
-    archive: Project[]
+    archive: TProject[]
 }
 
 export function ArchiveTable({ archive }: ArchiveTableProps) {
@@ -32,7 +32,7 @@ export function ArchiveTable({ archive }: ArchiveTableProps) {
                         <TableCell className="flex flex-wrap gap-2 min-w-60">
                             {project.technologies.map((technology, index) => (
                                 <div key={index} className="bg-zinc-800 px-3 py-2 text-zinc-300">
-                                    {technology}
+                                    {technology.name}
                                 </div>
                             ))}
                         </TableCell>
