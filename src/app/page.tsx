@@ -2,6 +2,8 @@ import { AboutSection } from "@/components/sections/about-section"
 import { HeroSection } from "@/components/sections/hero-section"
 import { ProjectsSection } from "@/components/sections/projects-section"
 
+export const dynamic = "force-dynamic"
+
 export default function AppPage() {
   return (
     <main className="flex flex-col mx-auto mb-10 w-full max-w-[1488px]">

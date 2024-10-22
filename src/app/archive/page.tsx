@@ -1,6 +1,8 @@
 import { getAllProjects } from "@/actions/get-all-projects"
 import { ArchiveTable } from "@/components/archive-table"
 
+export const dynamic = "force-dynamic"
+
 export default async function ArchivePage() {
     const projects = await getAllProjects()
 
